@@ -23,8 +23,8 @@
   "files": [
     "lib"
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/waitForTrue.js",
+  "types": "lib/waitForTrue.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "jest",

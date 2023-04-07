@@ -57,4 +57,5 @@ const waitForTrue = async (
   }
 };
 
+module.exports = waitForTrue;
 export default waitForTrue;
