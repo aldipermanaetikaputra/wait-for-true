@@ -1,6 +1,6 @@
 {
   "name": "wait-for-true",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "⌛ Wait for a condition to be true with configurable timeout and cancellation support.",
   "url": "https://github.com/aldipermanaetikaputra/wait-for-true",
   "keywords": [
