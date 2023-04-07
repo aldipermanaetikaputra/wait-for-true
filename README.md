@@ -39,15 +39,17 @@ const asyncCondition = async () => await checkSomeCondition();
 const abortController = new AbortController();
 const customError = new Error('Timeout occured or abort triggered');
 
+setTimeout(() => {
+  // Abort the wait manually then customError will be thrown
+  aborter.abort();
+}, 5000);
+
 await waitForTrue(asyncCondition, {
   interval: 250,
   timeout: 10000,
   signal: abortController.signal,
   error: customError,
 });
-
-// Abort the wait manually then customError will be thrown
-aborter.abort();
 ```
 
 ## Configuration Options
